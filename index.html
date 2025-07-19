@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.css"
+      integrity="sha512-GmZYQ9SKTnOea030Tbiat0Y+jhnYLIpsGAe6QTnToi8hI2nNbVMETHeK4wm4MuYMQdrc38x+sX77+kVD01eNsQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Mohammed Tosif - Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="./images/Mohammed_Tosif_logo.png" alt="logo" />
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="toggle-mode">🌞/🌜</div>
+    </header>
+
+    <section id="home" class="home">
+      <h1>I'm <span>Mohammed Tosif</span></h1>
+      <p>Full Stack Web Developer</p>
+      <img class="profile-img" src="images/profile.png" alt="Profile" />
+      <div class="socials">
+        <!-- linked my github account -->
+        <a href="https://github.com/Tosif2230" target="_blank"
+          ><i class="fab fa-github"></i
+        ></a>
+        <!-- linked my Linkdin account -->
+        <a href="https://www.linkedin.com/in/mohammed-tosif/" target="_blank"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+      <a href="./images/Mohammed_Tosif.pdf" class="btn" download
+        >Download CV</a
+      >
+    </section>
+
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <div class="about">
+        <div>
+          <img class= "about-img" src="./images/about.jpg" alt="About">
+          <p>
+            Hello! I'm Mohammed Tosif, an aspiring Full Stack Developer with a
+            strong passion for building modern, responsive web applications.
+            With 5.8 years of experience in a non-IT field, I have recently made
+            a dedicated shift into tech, driven by my curiosity and love for
+            problem-solving.
+          </p>
+
+          <p>
+            I have been actively learning and building projects using HTML, CSS,
+            JavaScript, Python, React and modern frameworks. My background has
+            shaped me into a detail-oriented, self-motivated learner who adapts
+            quickly and enjoys taking on new challenges.
+          </p>
+
+          <a href="#" class="btn">Read More</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill">
+          <label>HTML</label>
+          <div class="bar" style="width: 80%"></div>
+        </div>
+        <div class="skill">
+          <label>CSS</label>
+          <div class="bar" style="width: 70%"></div>
+        </div>
+        <div class="skill">
+          <label>Python</label>
+          <div class="bar" style="width: 65%"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Certifications</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>HTML & CSS</h3>
+          <p>By Internshala</p>
+          <a href="certificate1.pdf" target="_blank" class="btn"
+            >View Certificate</a
+          >
+        </div>
+        <div class="card">
+          <h3>JavaScript</h3>
+          <p>By Internshala</p>
+          <a href="certificate2.pdf" target="_blank" class="btn"
+            >View Certificate</a
+          >
+        </div>
+        <div class="card">
+          <h3>Python Basics</h3>
+          <p>By Udemy</p>
+          <a href="certificate4.pdf" target="_blank" class="btn"
+            >View Certificate</a
+          >
+        </div>
+      </div>
+
+      <h2>My Projects</h2>
+      <div class="cards">
+        <div class="card"><h3>Portfolio Website</h3>
+        <p>A responsive personal portfolio site built with HTML, CSS.</p>
+        <a href="#portfolio" class="btn">View Project</a>
+        </div>
+        <div class="card"><h3>Money Distribution Calculator</h3>
+        <p>Python script to split and manage expenses among people, useful for group events or travel. </p>
+        <a href="#money distribution" class="btn">View Project</a>        
+        </div>
+        <div class="card"><h3>Calculator (Console-based)</h3>
+        <p>A basic calculator using functions to perform arithmetic operations (+, –, *, /).</p><a href="#calculator" class="btn">View Project</a>
+      </div>
+        <div class="card">
+          <h3>Treasure Hunt Game</h3>
+        <p>Basic Game using Python.</p>
+        <a href="#treasure Hunt Game" class="btn">View Project</a>        
+        </div>
+        <div class="card"><h3>Snake-Water-Gun-Game</h3>
+          <p>Basic Game using Python</p>
+          <a href="#snake-Water-Gun-Game" class="btn">View Project</a>
+        </div>
+        <div class="card">
+          <h3>Program</h3>
+          <p></p>
+          <a href="#Program" class="btn">View Project</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+        <button class="btn">Submit</button>
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-text">
+        <!-- Email Link use ctrl + click for demo-->
+        <a
+          class="Contact-mail"
+          href="mailto:techie.tosif@gmail.com?subject=Inquiry&body=Hello, I would like to know more about..."
+          ><i class="fa-solid fa-envelope"> Mail</i></a
+        >
+        <!-- Call Link use ctrl + click for demo-->
+        <a class="Contact-tel" href="tel:+91-809-426-0002"
+          ><i class="fa-solid fa-phone"> Call</i></a
+        >
+        <p>&copy; Mohammed Tosif 2025</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,274 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background: #c97575;
+  color: whitesmoke;
+}
+
+header {
+  background: rgb(175, 75, 75);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 80px;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+nav a {
+  margin: 0 10px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+.toggle-mode {
+  cursor: pointer;
+}
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.home {
+  background: rgb(175, 75, 75);
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+.home h1 span {
+  color: rgb(4, 195, 243);
+}
+p {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  font-size: medium;
+}
+.profile-img {
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+.profile-img:hover {
+  transform: scale(1.1);
+}
+.about-img{
+  width: 400px;
+  height: 140px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transition: transform 0.3s;
+}
+.about-img:hover {
+  transform: scale(1.1);
+}
+.socials a {
+  margin: 10px;
+  font-size: 30px;
+  color: white;
+}
+.socials a:hover {
+  color: black;
+}
+
+.btn {
+  display: inline-block;
+  background: rgb(69, 198, 202);
+  color: whitesmoke;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.btn:hover {
+  background: #448fd1d5;
+  transform: scale(1.02);
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about img {
+  width: 150px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.skills .skill {
+  margin: 15px auto;
+  width: 80%;
+  background: #444;
+  height: 20px;
+  border-radius: 10px;
+}
+.skills .bar {
+  height: 100%;
+  background: rgb(69, 198, 202);
+  border-radius: 10px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.card {
+  background: rgb(175, 75, 75);
+  padding: 20px;
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 400px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  margin: 10px 0;
+  background: #c95252;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background: rgb(175, 75, 75);
+  color: #aaa;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer .footer-text {
+  display: flex;
+}
+
+.Contact-mail,
+.Contact-tel {
+  display: inline-block;
+  background-color: rgb(69, 198, 202);
+  color: white;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.Contact-mail:hover,
+.Contact-tel:hover {
+  background-color: #448fd1d5;
+  transform: scale(1.05);
+}
+
+@media (min-width: 1024px) {
+  /* Desktop/Laptop-specific styles */
+  .cards {
+    gap: 30px;
+  }
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+  /* iPad Mini portrait & landscape styles */
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+  }
+
+  .about,
+  .cards {
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+    padding: 30px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .skills .skill {
+    width: 90%;
+  }
+}
+
+@media (max-width: 360px) {
+  /* Galaxy S8+ specific styles */
+
+  header {
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .Contact-mail {
+    width: fit-content;
+    height: fit-content;
+  }
+
+  .Contact-tel {
+    width: fit-content;
+    height: fit-content;
+  }
+}
